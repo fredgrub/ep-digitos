@@ -1,0 +1,44 @@
+Relatório do caso p = 15 e ndig_treino = 100
+
+Percentual total de acertos: 90.94%
+
+Digito 0
+Acertos: 941/980
+Percentual de acertos: 96.02%
+
+Digito 1
+Acertos: 1129/1135
+Percentual de acertos: 99.47%
+
+Digito 2
+Acertos: 933/1032
+Percentual de acertos: 90.41%
+
+Digito 3
+Acertos: 865/1010
+Percentual de acertos: 85.64%
+
+Digito 4
+Acertos: 870/982
+Percentual de acertos: 88.59%
+
+Digito 5
+Acertos: 756/892
+Percentual de acertos: 84.75%
+
+Digito 6
+Acertos: 921/958
+Percentual de acertos: 96.14%
+
+Digito 7
+Acertos: 971/1028
+Percentual de acertos: 94.46%
+
+Digito 8
+Acertos: 807/974
+Percentual de acertos: 82.85%
+
+Digito 9
+Acertos: 901/1009
+Percentual de acertos: 89.30%
+

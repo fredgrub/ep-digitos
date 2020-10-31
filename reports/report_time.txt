@@ -1,0 +1,30 @@
+Horário de começo: 23:05:57.674812
+
+Caso ndig_treino 100 com p 5
+Tempo gasto para o MMQ: 64.83977031707764
+
+Caso ndig_treino 100 com p 10
+Tempo gasto para o MMQ: 72.91792488098145
+
+Caso ndig_treino 100 com p 15
+Tempo gasto para o MMQ: 77.19411730766296
+
+Caso ndig_treino 1000 com p 5
+Tempo gasto para o MMQ: 62.20916509628296
+
+Caso ndig_treino 1000 com p 10
+Tempo gasto para o MMQ: 69.83474445343018
+
+Caso ndig_treino 1000 com p 15
+Tempo gasto para o MMQ: 76.55004549026489
+
+Caso ndig_treino 4000 com p 5
+Tempo gasto para o MMQ: 62.34675741195679
+
+Caso ndig_treino 4000 com p 10
+Tempo gasto para o MMQ: 68.30771589279175
+
+Caso ndig_treino 4000 com p 15
+Tempo gasto para o MMQ: 77.50894546508789
+
+Acabou às: 23:16:29.523078
