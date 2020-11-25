@@ -1,44 +1,44 @@
 Relatório do caso p = 10 e ndig_treino = 4000
 
-Percentual total de acertos: 93.27%
+Percentual total de acertos: 93.50%
 
 Digito 0
-Acertos: 931/980
-Percentual de acertos: 95.00%
+Acertos: 940/980
+Percentual de acertos: 95.92%
 
 Digito 1
 Acertos: 1130/1135
 Percentual de acertos: 99.56%
 
 Digito 2
-Acertos: 953/1032
-Percentual de acertos: 92.34%
+Acertos: 955/1032
+Percentual de acertos: 92.54%
 
 Digito 3
-Acertos: 937/1010
-Percentual de acertos: 92.77%
+Acertos: 934/1010
+Percentual de acertos: 92.48%
 
 Digito 4
-Acertos: 906/982
-Percentual de acertos: 92.26%
+Acertos: 902/982
+Percentual de acertos: 91.85%
 
 Digito 5
-Acertos: 804/892
-Percentual de acertos: 90.13%
+Acertos: 815/892
+Percentual de acertos: 91.37%
 
 Digito 6
-Acertos: 938/958
-Percentual de acertos: 97.91%
+Acertos: 942/958
+Percentual de acertos: 98.33%
 
 Digito 7
-Acertos: 949/1028
-Percentual de acertos: 92.32%
+Acertos: 937/1028
+Percentual de acertos: 91.15%
 
 Digito 8
-Acertos: 864/974
-Percentual de acertos: 88.71%
+Acertos: 877/974
+Percentual de acertos: 90.04%
 
 Digito 9
-Acertos: 915/1009
-Percentual de acertos: 90.68%
+Acertos: 918/1009
+Percentual de acertos: 90.98%
 
