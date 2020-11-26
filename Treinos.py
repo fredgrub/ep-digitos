@@ -277,10 +277,6 @@ def main():
     parser.add_argument('-l','--list', nargs='*',
                        help='Recebe os argumentos para um teste específico (e.g. 100 5 0).',
                        type=int)
-    # parser.add_argument('test_all',
-    #                    metavar='test',
-    #                    type=bool,
-    #                    help='Executa todos os testes pedidos.')
 
     args = parser.parse_args()
 
