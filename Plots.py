@@ -176,6 +176,37 @@ def plot_top_k(topks, k, ndig, p, digito, preset):
     print('Imagem salva em ./{}'.format(filepath))
     plt.savefig(filepath, dpi=150)
 
+def get_img(col):
+    img = np.zeros((28,28))
+    for t in range(1,785):
+        j = t // 28
+        i = t - 28*j
+        img[j - 1, i - 1] = col[t - 1, 0]
+    return img
+
+def display(dig, ndig, p, rows, cols):
+    width=28
+    height=28
+    axes=[]
+    fig=plt.figure(figsize=(20, 10))
+    
+    with open("dig_treino/W_{}_{}_{}.txt".format(dig,ndig,p)) as file:
+        time = file.readline()
+        Wd = np.loadtxt(file)
+
+    for a in range(rows*cols):
+        b = get_img(Wd[:, a: a + 1])
+        axes.append( fig.add_subplot(rows, cols, a+1) )
+        subplot_title=("Coluna "+str(a))
+        axes[-1].set_title(subplot_title)
+        plt.axis('off')  
+        plt.imshow(b)
+    fig.tight_layout()
+    
+    filename = 'treinos_W_{}_{}_{}.png'.format(dig, ndig, p)
+    print('Imagem salva em ./figuras/{}'.format(filename))
+    plt.savefig('figuras/{}'.format(filename), dpi=150)
+
 def main():
     parser = argparse.ArgumentParser(
         description=
@@ -195,12 +226,16 @@ def main():
                        help='Analisa as classificações que não obteram acerto - top 3. (e.g. -e 1000 5 4)',
                        type=int)
     
+    parser.add_argument('-t','--visualize-train', nargs='*',
+                       help='Plota as imagens de um treino específico (e.g. -t 4 1000 5).',
+                       type=int)
     
     args = parser.parse_args()
     
     general = args.general
     compare = args.compare_cases
     erros = args.erros
+    train = args.visualize_train
 
     if general:
         general_plot()
@@ -228,6 +263,23 @@ def main():
 
         topks = get_k_rank(k,ndig,p,digito)
         plot_top_k(topks,k,ndig,p,digito,preset)
+    
+    if train != None:
+        digito = train[0]
+        ndig = train[1]
+        p = train[2]
+
+        if p == 5:
+            grid = [1,5]
+        elif p == 10:
+            grid = [2,5]
+        else:
+            grid = [3,5]
+
+        print('Gerando plot dos treinos...')
+        time.sleep(2)
+
+        display(digito,ndig,p,grid[0],grid[1])
 
 if __name__ == '__main__':
     main()
