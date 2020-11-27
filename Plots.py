@@ -155,13 +155,9 @@ def autolabel_deluxe(rects, ax):
 def plot_top_k(topks, k, ndig, p, digito, preset):
     labels = ['0','1','2','3','4','5','6','7','8','9']
     
-    fig, ax = plt.subplots(preset[0], preset[1], figsize=(13,6))
-    
-    plt.subplots_adjust(top=0.9)
-    fig.tight_layout(pad=2.0) # distância entre os plots
-    plt.subplots_adjust(hspace=1)
-    fig.suptitle('Histogramas do top {} digitos chutados no lugar do {}'.format(k, digito), size=15, y=1.05)
-    
+    fig, ax = plt.subplots(preset[0], preset[1], figsize=(13,6)) 
+    fig.subplots_adjust(bottom=0.1, top=0.88)
+    fig.suptitle('Histogramas do top {} digitos chutados no lugar do {}'.format(k, digito), size=15)
     for i in range(k):
         rect = ax[i].bar(list(topks[i + 1].keys()), topks[i + 1].values(), width=0.5, color='#c77dff')
         autolabel_deluxe(rect, ax[i])
