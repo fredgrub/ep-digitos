@@ -1,4 +1,4 @@
-RelatÃ³rio do caso p = 15 e ndig_treino = 4000
+Relatório do caso p = 15 e ndig_treino = 4000
 
 Percentual total de acertos: 93.76%
 

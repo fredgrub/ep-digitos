@@ -1,4 +1,4 @@
-RelatÃ³rio do caso p = 10 e ndig_treino = 100
+Relatório do caso p = 10 e ndig_treino = 100
 
 Percentual total de acertos: 89.90%
 
